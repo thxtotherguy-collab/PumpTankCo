@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tank Sizing — Pump & Tank Co</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="tank-sizing">
+
+    <div class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-badge"></span>
+          <div>
+            Pump & Tank Co
+            <small>Supply • Advice • Quotes</small>
+          </div>
+        </a>
+        <div class="menu">
+          <a class="" href="index.html">Home</a>
+          <a class="" href="pumps.html">Pumps</a>
+          <a class="" href="tanks.html">Tanks</a>
+          <a class="" href="pump-finder.html">Pump Finder</a>
+          <a class="active" href="tank-sizing.html">Tank Sizing</a>
+          <a class="" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+
+<div class="section">
+  <div class="container">
+    <h2>Tank Sizing</h2>
+    <p>Estimate backup storage needs. Adjust litres/person/day to match your site.</p>
+    <div class="card form-card">
+      <div class="row3">
+        <div>
+          <label for="ts_people">People / users</label>
+          <input id="ts_people" class="input" type="number" value="4" min="0" step="1">
+        </div>
+        <div>
+          <label for="ts_days">Days of backup</label>
+          <input id="ts_days" class="input" type="number" value="7" min="0" step="1">
+        </div>
+        <div>
+          <label for="ts_lppd">Litres per person per day</label>
+          <input id="ts_lppd" class="input" type="number" value="80" min="0" step="5">
+          <div class="notice">Typical range: 50–150 L/person/day.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div></div>
+        <div style="display:flex;align-items:flex-end">
+          <button id="ts_calc" class="btn primary" style="width:100%">Calculate</button>
+        </div>
+      </div>
+      <div id="ts_result" class="result"></div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:10px">
+            <span class="brand-badge"></span>
+            <div>
+              Pump & Tank Co
+              <small>Johannesburg & surrounds</small>
+            </div>
+          </div>
+          <div class="small">Pumps, tanks, fittings and sizing advice. For pricing, stock and delivery options—request a quote.</div>
+          <div class="notice">Disclaimer: sizing tools give estimates. Final selection depends on pipe length, fittings (friction losses), elevation, and application.</div>
+        </div>
+        <div>
+          <div style="font-weight:800;margin-bottom:8px">Quick links</div>
+          <div class="small" style="display:grid;gap:6px">
+            <a href="pumps.html">Browse pumps</a>
+            <a href="tanks.html">Browse tanks</a>
+            <a href="pump-finder.html">Pump Finder</a>
+            <a href="tank-sizing.html">Tank Sizing</a>
+            <a href="contact.html">Request a quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="assets/data.js"></script>
+    <script src="assets/app.js"></script>
+    
+</body>
+</html>

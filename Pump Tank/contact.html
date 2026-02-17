@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Pump & Tank Co</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="contact">
+
+    <div class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-badge"></span>
+          <div>
+            Pump & Tank Co
+            <small>Supply • Advice • Quotes</small>
+          </div>
+        </a>
+        <div class="menu">
+          <a class="" href="index.html">Home</a>
+          <a class="" href="pumps.html">Pumps</a>
+          <a class="" href="tanks.html">Tanks</a>
+          <a class="" href="pump-finder.html">Pump Finder</a>
+          <a class="" href="tank-sizing.html">Tank Sizing</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+
+<div class="section">
+  <div class="container">
+    <h2>Request a Quote</h2>
+    <p>Tell us what you need. Add distances, pipe size, photos, and your location.</p>
+    <div class="grid" style="grid-template-columns:1.1fr .9fr;gap:14px">
+      <div class="card form-card">
+        <form action="#" method="post" onsubmit="alert('This is a demo form. Connect it to email/CRM (e.g., Formspree/Netlify).'); return false;">
+          <div class="row">
+            <div>
+              <label>Name</label>
+              <input class="input" placeholder="Your name" required>
+            </div>
+            <div>
+              <label>Phone / WhatsApp</label>
+              <input class="input" placeholder="e.g. 082 123 4567" required>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label>Email</label>
+              <input class="input" type="email" placeholder="you@example.com">
+            </div>
+            <div>
+              <label>Location</label>
+              <input class="input" placeholder="e.g. Johannesburg">
+            </div>
+          </div>
+          <label>Product / interest</label>
+          <input id="c_product" class="input" placeholder="e.g. 5000L tank, borehole pump">
+          <label>Details</label>
+          <textarea id="c_details" rows="6" placeholder="Include: flow needed, head, pipe size, distances, borehole depth, tank height, etc."></textarea>
+          <div class="ctas" style="margin-top:12px">
+            <button class="btn primary" type="submit">Send request</button>
+            <a class="btn" id="wa_btn" href="#" target="_blank" rel="noopener">WhatsApp quote</a>
+          </div>
+          <div class="notice">To enable WhatsApp direct messaging, set your number in <code>contact.html</code> on the <code>#wa_number</code> element.</div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="small">Use these placeholders and replace with your real details.</p>
+        <div class="small" style="display:grid;gap:8px">
+          <div><b>Phone:</b> 0XX XXX XXXX</div>
+          <div><b>Email:</b> sales@yourdomain.co.za</div>
+          <div><b>Area:</b> Johannesburg & surrounds</div>
+        </div>
+        <div class="ctas" style="margin-top:14px">
+          <a class="btn primary" href="pump-finder.html">Pump Finder</a>
+          <a class="btn" href="tank-sizing.html">Tank Sizing</a>
+        </div>
+        <div id="wa_number" data-wa="27XXXXXXXXX" class="notice">WhatsApp number format: countrycode + number (no +, no spaces). Example: 27821234567</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:10px">
+            <span class="brand-badge"></span>
+            <div>
+              Pump & Tank Co
+              <small>Johannesburg & surrounds</small>
+            </div>
+          </div>
+          <div class="small">Pumps, tanks, fittings and sizing advice. For pricing, stock and delivery options—request a quote.</div>
+          <div class="notice">Disclaimer: sizing tools give estimates. Final selection depends on pipe length, fittings (friction losses), elevation, and application.</div>
+        </div>
+        <div>
+          <div style="font-weight:800;margin-bottom:8px">Quick links</div>
+          <div class="small" style="display:grid;gap:6px">
+            <a href="pumps.html">Browse pumps</a>
+            <a href="tanks.html">Browse tanks</a>
+            <a href="pump-finder.html">Pump Finder</a>
+            <a href="tank-sizing.html">Tank Sizing</a>
+            <a href="contact.html">Request a quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="assets/data.js"></script>
+    <script src="assets/app.js"></script>
+    
+</body>
+</html>
